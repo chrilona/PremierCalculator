@@ -93,13 +93,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="76dp"
         android:backgroundTint="#12E61A"
         android:text="SUBTRACT"
         app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNumber2"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.466" />
 
     <Button
         android:id="@+id/btnMultiply"
@@ -116,15 +116,53 @@
         android:id="@+id/tvAnswer"
         android:layout_width="108dp"
         android:layout_height="36dp"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="52dp"
+        android:text="Answer"
+        android:textColorHint="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/tvAnswer2"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="72dp"
+        android:text="Answer"
+        android:textColorHint="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAnswer3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/tvAnswer3"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:text="Answer"
+        android:textColorHint="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/tvAnswer4"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
         android:layout_marginEnd="80dp"
         android:text="Answer"
         android:textColorHint="#E91E63"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvAnswer"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintVertical_bias="0.945" />
 </androidx.constraintlayout.widget.ConstraintLayout>
